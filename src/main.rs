@@ -139,8 +139,8 @@ fn handle_connection(stream: TcpStream) {
 }
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
-    println!("Listening on http://127.0.0.1:7878");
+    let listener = TcpListener::bind("127.0.0.1:4221").unwrap();
+    println!("Listening on http://127.0.0.1:4221");
 
     for stream in listener.incoming() {
         if let Ok(stream) = stream {
