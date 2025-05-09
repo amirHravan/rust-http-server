@@ -108,7 +108,7 @@ fn handle_root(_: &Request) -> Response {
 }
 
 fn handle_not_found() -> Response {
-    Response::new("404 NOT FOUND", "Not Found")
+    Response::new("404 Not Found", "")
 }
 
 fn handle_echo(req: &Request) -> Response {
